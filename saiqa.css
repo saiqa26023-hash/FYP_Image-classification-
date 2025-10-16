@@ -1,0 +1,99 @@
+/* Gradient background animation */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #2C3E50, #3498DB, #8E44AD );
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card container */
+.form-card {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+
+.form-header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.form-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+/* Table and form fields */
+form {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 8px;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Submit button */
+input[type="submit"] {
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #4b0ca6;
+}
+
+

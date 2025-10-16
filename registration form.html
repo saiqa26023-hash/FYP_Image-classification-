@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="saiqa.css">
+</head>
+<body>
+  <div class="form-card">
+    <div class="form-header">
+      <h2>REGISTRATION FORM</h2>
+      <p>Enter your personal data</p>
+    </div>
+    <form>
+      <table>
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" name="fname" required></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" name="lname" required></td>
+        </tr>
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <label><input type="checkbox" name="gender" value="male"> Male</label>
+            <label><input type="checkbox" name="gender" value="female"> Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Age:</td>
+          <td><input type="number" name="age" required></td>
+        </tr>
+        <tr>
+          <td>Skills:</td>
+          <td>
+          <label><input type="radio" name="skill" value="html"> HTML</label>
+          <label><input type="radio" name="skill" value="html"> CSS</label>
+          <label><input type="radio" name="skill" value="html"> PHP</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Qualification:</td>
+          <td>
+            <select name="qualification" required>
+              <option value="">Select Qualification</option>
+              <option value="matric">Matric</option>
+              <option value="inter">Intermediate</option>
+              <option value="bachelor">Bachelor</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Upload Image:</td>
+          <td><input type="file" name="image" accept="image/*" required></td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td><textarea name="address" rows="3" required></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center;">
+            <input type="submit" value="Click Me!">
+          </td>
+        </tr>
+      </table>
+    </form>
+ 
+</body>
+</html>
